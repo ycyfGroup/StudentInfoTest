@@ -4,5 +4,8 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class StudentController {
-
+	
+	/**
+	 * 查询学生信息
+	 */
 }
