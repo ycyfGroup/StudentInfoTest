@@ -18,7 +18,7 @@ import com.yc.studentinfo.dao.BaseDao;
 @Repository
 public class BaseDaoImpl<T> implements BaseDao<T> {
 
-	private final String MAPPERPATH = "com.yc.dao.mapper.";
+	private final String MAPPERPATH = "com.yc.studentinfo.mapper.";
 
 	@Autowired
 	private SqlSession sqlSession;
