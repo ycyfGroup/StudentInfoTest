@@ -14,7 +14,7 @@ function del() {
 		data : "id=1",
 		type : 'delete',
 		success : function(data) {			
-				alert("删除用户信息成功....");							
+				alert("删除用户信息成功le....");							
 		}
 	});
 }
