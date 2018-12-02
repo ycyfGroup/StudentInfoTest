@@ -59,24 +59,24 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 	}
 
 	@Override
-	public void del(T t, String sqlId) {
-		sqlSession.delete(MAPPERPATH + t.getClass().getSimpleName() + "Mapper." + sqlId,t);
+	public Integer del(T t, String sqlId) {
+		return sqlSession.delete(MAPPERPATH + t.getClass().getSimpleName() + "Mapper." + sqlId,t);
 	}
 
 	@Override
-	public void del(Class<T> clazz, String sqlId, Map<String, Object> map) {
-		sqlSession.delete(MAPPERPATH + clazz.getSimpleName() + "Mapper." + sqlId,map);
+	public Integer del(Class<T> clazz, String sqlId, Map<String, Object> map) {
+		return sqlSession.delete(MAPPERPATH + clazz.getSimpleName() + "Mapper." + sqlId,map);
 
 	}
 
 	@Override
-	public void del(Class<T> clazz,String sqlId, List<Integer> ids) {
-		sqlSession.delete(MAPPERPATH + clazz.getSimpleName() + "Mapper." + sqlId,ids);		
+	public Integer del(Class<T> clazz,String sqlId, List<Integer> ids) {
+		return sqlSession.delete(MAPPERPATH + clazz.getSimpleName() + "Mapper." + sqlId,ids);		
 	}
 
 	@Override
-	public void del(Class<T> clazz, String sqlId,Integer id) {
-		sqlSession.update(MAPPERPATH + clazz.getSimpleName() + "Mapper." + sqlId,id);
+	public Integer del(Class<T> clazz, String sqlId,Integer id) {
+		return sqlSession.update(MAPPERPATH + clazz.getSimpleName() + "Mapper." + sqlId,id);
 	}
 
 	@Override

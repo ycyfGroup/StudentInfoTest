@@ -12,9 +12,22 @@ import com.yc.studentinfo.beans.Student;
  */
 public interface StudentService {
 	/**
-	 * 	查询所有的用户信息
+	 * 查询所有的用户信息
 	 * 
 	 * @return
 	 */
 	public List<Student> selectAll();
+
+	/**
+	 * 
+	 * Title: StudentService
+	 * 
+	 * @author liumin
+	 * @date 2018年12月2日
+	 *
+	 *       Description:根据用户id删除一条记录
+	 * @param id
+	 */
+	public void del(Integer id);
+
 }

@@ -12,6 +12,7 @@
 %>
 <base href="<%=basePath%>">
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <title>学生个人信息</title>
 </head>
 <body>
@@ -20,11 +21,13 @@
 			<tr>
 				<td>编号</td>
 				<td>姓名</td>
+				<td>操作</td>
 			</tr>
 			<c:forEach items="${studentList }" var="student">
 				<tr>
 					<td>${student.id }</td>
 					<td>${student.sname }</td>
+					<td><a href="javascript:void" onclick="del(${student.id })"></a></td>
 				</tr>
 			</c:forEach>
 		</table>

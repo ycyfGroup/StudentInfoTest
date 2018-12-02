@@ -77,7 +77,7 @@ public interface BaseDao<T> {
 	 * @param t
 	 * @param sqlId
 	 */
-	public void del(T t, String sqlId);
+	public Integer del(T t, String sqlId);
 
 	/**
 	 * 删除操作
@@ -86,7 +86,7 @@ public interface BaseDao<T> {
 	 * @param sqlId
 	 * @param map
 	 */
-	public void del(Class<T> clazz, String sqlId, Map<String, Object> map);
+	public Integer del(Class<T> clazz, String sqlId, Map<String, Object> map);
 
 	/**
 	 * 删除操作
@@ -95,7 +95,7 @@ public interface BaseDao<T> {
 	 * @param sqlId
 	 * @param ids
 	 */
-	public void del(Class<T> clazz, String sqlId, List<Integer> ids);
+	public Integer del(Class<T> clazz, String sqlId, List<Integer> ids);
 
 	/**
 	 * 删除操作
@@ -104,7 +104,7 @@ public interface BaseDao<T> {
 	 * @param sqlId
 	 * @param id
 	 */
-	public void del(Class<T> clazz, String sqlId, Integer id);
+	public Integer del(Class<T> clazz, String sqlId, Integer id);
 
 	/**
 	 * 查询所有
