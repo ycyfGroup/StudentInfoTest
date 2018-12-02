@@ -30,7 +30,12 @@
 					<td><a href="javascript:void" onclick="del(${student.id })">删除</a></td>
 				</tr>
 			</c:forEach>
+
 		</table>
+
+		<form action="addStudent" method="post">
+			<input type="text" name="sname"> <input type="submit" value="添加">
+		</form>
 	</div>
 </body>
 </html>

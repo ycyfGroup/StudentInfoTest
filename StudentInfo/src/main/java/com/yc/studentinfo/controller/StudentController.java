@@ -6,18 +6,23 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.yc.studentinfo.beans.Student;
 import com.yc.studentinfo.service.StudentService;
 import com.yc.studentinfo.utils.JsonModel;
 
+
 /**
  * 
- * @author 偶是智障儿童
- *
+ * Title: StudentController  
+ * Description:   
+ * @author Zhu YuJia
+ * @date 2018年12月2日
  */
 @Controller
 public class StudentController {
@@ -47,5 +52,22 @@ public class StudentController {
 			jsonModel.setErrorMsg("删除失败");
 		}
 		return jsonModel;
+	}
+	/**
+	 * 
+	 * Title: addUser  
+	 * Description:   添加学生信息
+	 * @param student
+	 * @param sname
+	 * @param model
+	 * @return
+	 */
+	@PostMapping(value="/addStudent")
+	public String addUser(Student student,Model model) {
+		
+		
+		studentService.addStudent(student);
+		 model.addAttribute("studentList", studentService.selectAll()) ;
+		 return "index";
 	}
 }
