@@ -11,9 +11,9 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.4.RELEASE</version>
+		<version>1.5.9.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
 	<!-- 整合spring webmvc 实现的原理是maven的依赖继承关系 springboot中 快速开发原理（maven子父继承关系） 
 		对常用依赖信息进行封装 -->
 	<dependencies>
@@ -48,13 +48,13 @@
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 		
-		<!-- 添加热部署 -->
+		<!-- 添加热部署-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 			<scope>true</scope>
-		</dependency>
+		</dependency> 
 		
 
 		<!-- mysql 依赖 -->
@@ -99,11 +99,11 @@
 			<version>1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api 
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<!-- SpringBoot 外部tomcat支持 -->
 		<dependency>
@@ -122,9 +122,14 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		
-		
-		
+
+
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
 	</dependencies>
   <build>
     <finalName>StudentInfo</finalName>
