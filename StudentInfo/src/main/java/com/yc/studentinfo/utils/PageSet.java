@@ -2,7 +2,11 @@ package com.yc.studentinfo.utils;
 
 import java.io.Serializable;
 import java.util.List;
-
+/**
+ * 分页的包装类
+ * @author 陈杰
+ * @date 2018/12/02
+ */
 public class PageSet<T> implements Serializable{
 	
 	/**

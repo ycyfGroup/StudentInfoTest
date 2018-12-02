@@ -111,6 +111,7 @@ public interface BaseDao<T> {
 	 * 
 	 * @param t
 	 * @param sqlId
+	 * @return list 返回一个类的集合
 	 */
 	public List<T> findAll(T t, String sqlId);
 
@@ -138,6 +139,7 @@ public interface BaseDao<T> {
 	 * 
 	 * @param t
 	 * @param sqlId
+	 * @return T 返回一个类
 	 */
 	public T findOne(T t, String sqlId);
 
