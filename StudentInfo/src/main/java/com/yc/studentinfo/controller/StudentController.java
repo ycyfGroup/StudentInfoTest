@@ -22,7 +22,6 @@ public class StudentController {
 	 */
 	@GetMapping("/all")
 	public String selectAll(HttpSession session) {
-		System.err.println("wwwwwwww");
 		List<Student> studentList = studentService.selectAll();
 		session.setAttribute("studentList", studentList);
 		return "index";
