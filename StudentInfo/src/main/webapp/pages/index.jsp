@@ -27,6 +27,12 @@
 					<td>${student.sname }</td>
 				</tr>
 			</c:forEach>
+			<tr>
+	<td><form action="addStudent" method="post">
+		<input type="text" name="sname">
+		<input type="submit"value="添加">
+	</form></td>
+	</tr>
 		</table>
 	</div>
 </body>

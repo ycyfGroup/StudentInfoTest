@@ -34,8 +34,8 @@
 
 	<!-- 添加用户的信息 -->
 	<insert id="addStudentInfo" parameterType="Student">
-		insert into person
-		(name) values(#{name})
+		insert into student
+		(sname) values(#{sname})
 	</insert>
 
 	<!-- 统计总条数 -->

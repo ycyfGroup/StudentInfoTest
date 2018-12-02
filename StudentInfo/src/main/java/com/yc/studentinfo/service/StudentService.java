@@ -5,10 +5,11 @@ import java.util.List;
 import com.yc.studentinfo.beans.Student;
 
 /**
- * student业务层处理
  * 
- * @author 偶是智障儿童
- *
+ * Title: StudentService  
+ * Description:   
+ * @author Zhu YuJia
+ * @date 2018年12月2日
  */
 public interface StudentService {
 	/**
@@ -17,4 +18,11 @@ public interface StudentService {
 	 * @return
 	 */
 	public List<Student> selectAll();
+	
+	/**
+	 * 添加学生信息
+	 * Title: addStudent  
+	 * Description:
+	 */
+	public void addStudent(Student student);
 }

@@ -10,8 +10,10 @@ import com.yc.studentinfo.dao.BaseDao;
 import com.yc.studentinfo.service.StudentService;
 /**
  * 
- * @author 陈杰
- * @date 2018/12/02
+ * Title: StudentServiceImpl  
+ * Description:   
+ * @author Zhu YuJia
+ * @date 2018年12月2日
  */
 @Repository
 public class StudentServiceImpl implements StudentService {
@@ -22,6 +24,16 @@ public class StudentServiceImpl implements StudentService {
 	@Override
 	public List<Student> selectAll() {
 		return baseDao.findAll(Student.class, "selectAll");
+	}
+
+	/* (non-Javadoc)  
+	 * Title: addStudent  
+	 * Description:     
+	 * @see com.yc.studentinfo.service.StudentService#addStudent()  
+	 */
+	@Override
+	public void addStudent(Student student) {
+		baseDao.save(student, "addStudentInfo");
 	}
 
 }
