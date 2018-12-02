@@ -27,7 +27,7 @@
 				<tr>
 					<td>${student.id }</td>
 					<td>${student.sname }</td>
-					<td><a href="javascript:void" onclick="del(${student.id })"></a></td>
+					<td><a href="javascript:void" onclick="del(${student.id })">删除</a></td>
 				</tr>
 			</c:forEach>
 		</table>

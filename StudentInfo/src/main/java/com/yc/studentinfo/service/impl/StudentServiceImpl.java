@@ -26,8 +26,8 @@ public class StudentServiceImpl implements StudentService {
 		return baseDao.findAll(Student.class, "selectAll");
 	}
 	@Override
-	public void del(Integer id) {
-		baseDao.del(Student.class, "deleteStudentInfo",id);		
+	public Integer del(Integer id) {
+		return baseDao.del(Student.class, "deleteStudentInfo",id);		
 
 	}
 

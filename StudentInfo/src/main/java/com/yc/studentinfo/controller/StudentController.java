@@ -1,6 +1,5 @@
 package com.yc.studentinfo.controller;
 
-
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -9,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.yc.studentinfo.beans.Student;
 import com.yc.studentinfo.service.StudentService;
+import com.yc.studentinfo.utils.JsonModel;
 
 /**
  * 
@@ -23,10 +22,9 @@ import com.yc.studentinfo.service.StudentService;
 @Controller
 public class StudentController {
 
-	
 	@Autowired
 	private StudentService studentService;
-	
+
 	/**
 	 * 查询学生信息
 	 */
@@ -37,14 +35,17 @@ public class StudentController {
 		return "index";
 	}
 
-	
-	@RequestMapping("/todelete")
-	public String post(){
-		return "delete";
-	}
-	
 	@DeleteMapping("/delete/{id}")
-	public void del(@PathVariable("id") Integer id){
-		studentService.del(id);
+	@ResponseBody
+	public JsonModel del(JsonModel jsonModel, Student student) {
+		Integer del = studentService.del(student.getId());
+		System.err.println(del);
+		if (del > 0) {
+			jsonModel.setCode(1);
+		}else {
+			jsonModel.setCode(0);
+			jsonModel.setErrorMsg("删除失败");
+		}
+		return jsonModel;
 	}
 }
