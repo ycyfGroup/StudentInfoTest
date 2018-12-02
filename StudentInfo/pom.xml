@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>StudentInfo Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <!-- 整合第三方框架的依赖信息 封装好版本信息 -->
+  <!-- 整合第三方框架的依赖信息 封装好版本信息 123-->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
