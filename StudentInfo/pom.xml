@@ -1,18 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.yc.test</groupId>
-  <artifactId>StudentInfo</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>StudentInfo Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <!-- 整合第三方框架的依赖信息 封装好版本信息 123-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.yc.test</groupId>
+	<artifactId>StudentInfo</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>StudentInfo Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<!-- 整合第三方框架的依赖信息 封装好版本信息 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.4.RELEASE</version>
-		<relativePath/> 
+		<version>2.0.1.RELEASE</version>
+		<relativePath />
 	</parent>
 	<!-- 整合spring webmvc 实现的原理是maven的依赖继承关系 springboot中 快速开发原理（maven子父继承关系） 
 		对常用依赖信息进行封装 -->
@@ -47,15 +48,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
-		
-		<!-- 添加热部署-->
+
+		<!-- 添加热部署 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 			<scope>true</scope>
-		</dependency> 
-		
+		</dependency>
+
 
 		<!-- mysql 依赖 -->
 		<dependency>
@@ -110,7 +111,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
@@ -124,7 +125,7 @@
 		</dependency>
 
 	</dependencies>
-  <build>
-    <finalName>StudentInfo</finalName>
-  </build>
+	<build>
+		<finalName>StudentInfo</finalName>
+	</build>
 </project>

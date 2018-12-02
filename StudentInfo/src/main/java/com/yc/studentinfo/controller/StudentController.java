@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import com.yc.studentinfo.beans.Student;
 import com.yc.studentinfo.service.StudentService;
 
+/**
+ * 
+ * @author 偶是智障儿童
+ *
+ */
 @Controller
 public class StudentController {
 	
