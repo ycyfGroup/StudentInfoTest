@@ -33,12 +33,6 @@ public class StudentServiceImpl implements StudentService {
 
 	}
 
-	/* 
-	 * (non-Javadoc)  
-	 * Title: addStudent  
-	 * Description:     
-	 * @see com.yc.studentinfo.service.StudentService#addStudent()  
-	 */
 	@Override
 	public void addStudent(Student student) {
 		baseDao.save(student, "addStudentInfo");

@@ -11,7 +11,7 @@ import com.yc.studentinfo.dao.BaseDao;
 
 /**
  * baseDao 的实现类
- * @author 偶是智障儿童
+ * @author 陈杰
  *
  * @param <T>
  */

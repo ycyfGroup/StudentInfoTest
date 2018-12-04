@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * dao层使用的包装类
  * 
- * @author 偶是智障儿童
+ * @author 陈杰
  *
  * @param <T>
  */
@@ -76,6 +76,7 @@ public interface BaseDao<T> {
 	 * 
 	 * @param t
 	 * @param sqlId
+	 * @return result
 	 */
 	public Integer del(T t, String sqlId);
 
@@ -85,6 +86,7 @@ public interface BaseDao<T> {
 	 * @param clazz
 	 * @param sqlId
 	 * @param map
+	 * @return result
 	 */
 	public Integer del(Class<T> clazz, String sqlId, Map<String, Object> map);
 
@@ -94,6 +96,7 @@ public interface BaseDao<T> {
 	 * @param clazz
 	 * @param sqlId
 	 * @param ids
+	 * @return result
 	 */
 	public Integer del(Class<T> clazz, String sqlId, List<Integer> ids);
 
@@ -103,6 +106,7 @@ public interface BaseDao<T> {
 	 * @param clazz
 	 * @param sqlId
 	 * @param id
+	 * @return result
 	 */
 	public Integer del(Class<T> clazz, String sqlId, Integer id);
 

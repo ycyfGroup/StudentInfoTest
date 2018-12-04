@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * student表（id 编号   sname 姓名）
- * @author 偶是智障儿童
+ * @author 陈杰
  *
  */
 public class Student implements Serializable {

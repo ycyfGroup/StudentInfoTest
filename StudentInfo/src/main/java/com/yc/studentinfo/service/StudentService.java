@@ -27,16 +27,18 @@ public interface StudentService {
 	 * @author liumin
 	 * @date 2018年12月2日
 	 *
-	 *       Description:根据用户id删除一条记录
+	 * @Description:根据用户id删除一条记录
 	 * @param id
+	 * @return result
 	 */
 	public Integer del(Integer id);
 
 	
 	/**
-	 * 添加学生信息
+	 * 
 	 * Title: addStudent  
-	 * Description:
+	 * Description:添加学生信息
+	 * @param student  学生信息
 	 */
 	public void addStudent(Student student);
 }
