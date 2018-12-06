@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.yc.studentinfo.beans.Student;
 import com.yc.studentinfo.service.StudentService;
 
 @Controller
@@ -14,8 +15,9 @@ public class StudentController {
 	@Resource
 	StudentService stu;
 	
-	@RequestMapping("/a")
+	@RequestMapping("/aa")
 	public String post(){
+		
 		return "delete";
 	}
 	
