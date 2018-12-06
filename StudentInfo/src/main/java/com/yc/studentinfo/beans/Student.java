@@ -2,11 +2,14 @@ package com.yc.studentinfo.beans;
 
 import java.io.Serializable;
 
+import lombok.Data;
+
 /**
  * student表（id 编号   sname 姓名）
  * @author 陈杰
  *
  */
+@Data
 public class Student implements Serializable {
 
 	/**
@@ -31,7 +34,9 @@ public class Student implements Serializable {
 	public Integer getId() {
 		return id;
 	}
+
 	
+
 	/**
 	 * 设置学生编号
 	 * @param id 学生编号
@@ -55,6 +60,7 @@ public class Student implements Serializable {
 	public void setSname(String sname) {
 		this.sname = sname;
 	}
+
 
 	@Override
 	public String toString() {

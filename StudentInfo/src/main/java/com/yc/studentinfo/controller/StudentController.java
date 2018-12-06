@@ -27,6 +27,7 @@ import com.yc.studentinfo.utils.JsonModel;
 @Controller
 public class StudentController {
 
+
 	@Autowired
 	private StudentService studentService;
 

@@ -17,7 +17,7 @@
 </head>
 <body>
 	<div align="center">
-		<table border="1px">
+		<table border="1">
 			<tr>
 				<td>编号</td>
 				<td>姓名</td>

@@ -2,8 +2,8 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 
 A component required a bean of type 'com.yc.demo.biz.UserBiz' that could not be found.
 
-解决@ComponentScan(basePackages= {"com.yc.demo.dao","com.yc.demo.biz","com.yc.demo.bean"})
+瑙ｅ喅@ComponentScan(basePackages= {"com.yc.demo.dao","com.yc.demo.biz","com.yc.demo.bean"})
 
-报错CLIENT_PLUGIN_AUTH is required
-解决dependency中声明的mysql-connector-java版本与plugin中声明的版本不一致，将两个jar包的版本统一即可
+鎶ラ敊CLIENT_PLUGIN_AUTH is required
+瑙ｅ喅dependency涓０鏄庣殑mysql-connector-java鐗堟湰涓巔lugin涓０鏄庣殑鐗堟湰涓嶄竴鑷达紝灏嗕袱涓猨ar鍖呯殑鐗堟湰缁熶竴鍗冲彲
 	mysql-connector-java 5.1.34
